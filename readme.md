@@ -6,14 +6,21 @@ Facts
 - version: 1.0.0
 - extension key: Anhi_ImportGroupPrices
 - [extension on Magento Connect](http://www.magentocommerce.com/magento-connect/anhi)-importgroupprices-1234.html)
-- Magento Connect 1.0 extension key: magento-community/Anhi_ImportGroupPrices
 - Magento Connect 2.0 extension key: http://connect20.magentocommerce.com/community/Anhi_ImportGroupPrices
 - [extension on GitHub](https://github.com/anhi/Anhi_ImportGroupPrices)
 - [direct download link](http://connect.magentocommerce.com/community/get/Anhi_ImportGroupPrices-1.0.0.tgz)
 
 Description
 -----------
-This paragraph describes what the extension does.
+Click System/Import Export/ Import Custom Tool
+Import group prices from CSV file:
+CSV format:  s
+
+| sku     | website_id | group_id | price |
+|---------|------------|-------------------|-------|
+| 1231231 | 1          | 3                 | 120   |
+|         |            |                   |       |
+|         |            |                   |       |
 
 Requirements
 ------------
@@ -27,15 +34,14 @@ Compatibility
 
 Installation Instructions
 -------------------------
-1. Install the extension via Magento Connect with the key shown above or copy all the files into your document root.
-2. Clear the cache, logout from the admin panel and then login again.
-3. Configure and activate the extension under System - Configuration - Company - Example Extension.
-4. ...
+1. Use modman:  
+    
+    modman deploy Anhi_ImportGroupPrices
 
-Uninstallation
+Uninstallation  
 --------------
-1. Remove all extension files from your Magento installation
-2. ...
+
+    modman undeploy Anhi_ImportGroupPrices
 
 Support
 -------
