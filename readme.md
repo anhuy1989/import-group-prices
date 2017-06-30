@@ -19,8 +19,6 @@ CSV format:  s
 | sku     | website_id | group_id | price |
 |---------|------------|-------------------|-------|
 | 1231231 | 1          | 3                 | 120   |
-|         |            |                   |       |
-|         |            |                   |       |
 
 Requirements
 ------------
@@ -35,7 +33,7 @@ Compatibility
 Installation Instructions
 -------------------------
 1. Use modman:  
-    
+
     modman deploy Anhi_ImportGroupPrices
 
 Uninstallation  
