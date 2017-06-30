@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<layout>
+    <importgroupprices_adminhtml_import_index>
+        <reference name="content">
+            <block type="core/template" name="import_custom" template="importgroupprices/form.phtml" >
+                <block type="anhi_importgroupprices/adminhtml_group_price" name="group_price" template="importgroupprices/group/price.phtml" >
+                    <action method="setHiddenData"><value>group_price</value></action>
+                    <action method="setFileType"><value>csv</value></action>
+                </block>
+            </block>
+        </reference>
+    </importgroupprices_adminhtml_import_index>
+</layout>

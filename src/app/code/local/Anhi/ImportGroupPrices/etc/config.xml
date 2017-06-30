@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Anhi_ImportGroupPrices>
+            <version>1.0.0</version>
+        </Anhi_ImportGroupPrices>
+    </modules>
+    <admin>
+        <routers>
+            <importgroupprices>
+                <use>admin</use>
+                <args>
+                    <module>Anhi_ImportGroupPrices</module>
+                    <frontName>importgroupprices</frontName>
+                </args>
+            </importgroupprices>
+        </routers>
+    </admin>
+    <global>
+        <blocks>
+            <anhi_importgroupprices>
+                <class>Anhi_ImportGroupPrices_Block</class>
+            </anhi_importgroupprices>
+          </blocks>
+        <helpers>
+            <anhi_importgroupprices>
+                <class>Anhi_ImportGroupPrices_Helper</class>
+            </anhi_importgroupprices>
+        </helpers>
+        <models>
+            <anhi_importgroupprices>
+                <class>Anhi_ImportGroupPrices_Model</class>
+            </anhi_importgroupprices>
+        </models>
+        <resources>
+            <anhi_importgroupprices_setup>
+                <setup>
+                    <module>Anhi_ImportGroupPrices</module>
+                </setup>
+            </anhi_importgroupprices_setup>
+        </resources>
+    </global>
+    <frontend>
+        <routers>
+            <anhi_importgroupprices>
+                <use>standard</use>
+                <args>
+                    <frontName>importgroupprices</frontName>
+                    <module>Anhi_ImportGroupPrices</module>
+                </args>
+            </anhi_importgroupprices>
+        </routers>
+    </frontend>
+    <adminhtml>
+        <menu>
+            <system>
+                <children>
+                    <convert translate="title">
+                        <children>
+                            <importgroupprices translate="title" module="anhi_importgroupprices">
+                                <title>Import Custom Tool</title>
+                                <action>importgroupprices/adminhtml_import/index</action>
+                                <sort_order>10</sort_order>
+                            </importgroupprices>
+                        </children>
+                    </convert>
+                </children>
+            </system>
+        </menu>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <convert module="anhi_importgroupprices">
+                                    <children>
+                                        <importgroupprices translate="title">
+                                            <title>Import Custom Tool</title>
+                                            <sort_order>10</sort_order>
+                                        </importgroupprices>
+                                    </children>
+                                </convert>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+        <layout>
+            <updates>
+                <anhi_importgroupprices>
+                    <file>importgroupprices.xml</file>
+                </anhi_importgroupprices>
+            </updates>
+        </layout>
+    </adminhtml>
+
+</config>

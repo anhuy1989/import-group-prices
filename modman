@@ -1,0 +1,4 @@
+src/app/code/local/Anhi/ImportGroupPrices     app/code/local/Anhi/ImportGroupPrices
+src/app/design/adminhtml/default/default/layout/importgroupprices.xml    app/design/adminhtml/default/default/layout/importgroupprices.xml
+src/app/design/adminhtml/default/default/template/importgroupprices     app/design/adminhtml/default/default/template/importgroupprices
+src/app/etc/modules/Anhi_ImportGroupPrices.xml      app/etc/modules/Anhi_ImportGroupPrices.xml
