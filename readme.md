@@ -32,7 +32,7 @@ Compatibility
 
 Installation Instructions
 -------------------------
-1. Use modman:  
+Use modman:  
 
     modman deploy Anhi_ImportGroupPrices
 
